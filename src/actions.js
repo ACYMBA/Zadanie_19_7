@@ -2,6 +2,8 @@ import uuid from 'uuid';
 
 const ADD_COMMENT = 'ADD_COMMENT';
 const THUMB_UP_COMMENT = 'THUMB_UP_COMMENT';
+const THUMB_DOWN_COMMENT = 'THUMB_DOWN_COMMENT';
+
 
 function addComment(text) {
   return {
@@ -18,6 +20,11 @@ function thumbUpComment(commentId) {
   }
 }
 
-export {addComment};
-export {thumbUpComment};
+function thumbDownComment(commentid) {
+	return {
+		type: THUMB_DOWN_COMMENT,
+		id: commentid
+	}
+}
 
+export {addComment, thumbUpComment, ADD_COMMENT, THUMB_UP_COMMENT};
