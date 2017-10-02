@@ -18,6 +18,5 @@ function thumbUpComment(commentId) {
   }
 }
 
-export {addComment};
-export {thumbUpComment};
+export {addComment, thumbUpComment, ADD_COMMENT, THUMB_UP_COMMENT};
 
