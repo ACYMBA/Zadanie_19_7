@@ -27,4 +27,4 @@ function thumbDownComment(commentid) {
 	}
 }
 
-export {addComment, thumbUpComment, ADD_COMMENT, THUMB_UP_COMMENT};
+export {addComment, thumbUpComment, thumbDownComment, ADD_COMMENT, THUMB_UP_COMMENT, THUMB_DOWN_COMMENT};
